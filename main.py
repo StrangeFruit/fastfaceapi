@@ -9,9 +9,8 @@ app = FastAPI()
 
 
 
-img1 = "https://i.imgur.com/N0Y5Dvj.jpeg"
-img2 = "https://i.imgur.com/Ekc4ABJ.png"
-result = DeepFace.verify(img1_path = img1, img2_path = img2)
+
+result = DeepFace.verify(img1_path = "img", img2_path = "img")
 
 
 @app.get("/")
